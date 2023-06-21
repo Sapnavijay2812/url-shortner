@@ -25,7 +25,7 @@ Update the database connection URL in the project's configuration files.
 npm install
 npm start
 ```
-5. The project should now be running on your local machine. Access it via 'http://localhost:3000' or the specified port.
+5. The project should now be running on your local machine. Access it via 'http://localhost:8001' .
 
 # Internal Working of the Project
 The project's internal working can be divided into two main tasks:
@@ -41,19 +41,6 @@ Option 3: Mongo Atlas Search (recommended): This approach involves utilizing Mon
 
 For further enhancement, an auto-complete functionality can be implemented, which suggests search terms as the user types, providing a more intuitive user experience.
 
-Internal Working of the Project
-The project's internal working can be divided into two main tasks:
-
-Task 1: Implementing Search Functionality
-To implement the search functionality, different approaches can be considered:
-
-Option 1: Retrieve all data and filter on the frontend (not recommended): This approach involves fetching all the data from the database and performing the filtering process on the client-side. However, this approach may result in performance issues, especially when dealing with large datasets.
-
-Option 2: Classic query iteration: This approach involves querying the database and iterating through all the data to find the desired results. While it is a viable solution, it may not be efficient for large datasets.
-
-Option 3: Mongo Atlas Search (recommended): This approach involves utilizing Mongo Atlas Search, which allows for efficient text-based search capabilities. By setting up search indexes, the search functionality can be optimized, providing faster and more accurate results.
-
-For further enhancement, an auto-complete functionality can be implemented, which suggests search terms as the user types, providing a more intuitive user experience.
 
 # Task 2: Implementing Authentication with JWT
 To implement authentication using JSON web tokens, the following steps are typically involved:
